@@ -8,4 +8,11 @@
 # factorial(5)
 #
 # > 120
+def factorial(num):
+    product = 1
+    for i in range(1, num + 1):
+       product *= i 
+       return product
+      
+print(factorial(5))
 #

@@ -1,15 +1,15 @@
 # Write a function called `letter_count` to count the letter
-# occurrence in a string. Use a dictionary.
-#
+# occurrences of each letter in a string. Use a dictionary.
+# def letter_count(letter):
+#     for letter in letter_count:
+#         print(letter)
+
+# letter_count("banana")
 # You can iterate over a string one letter at a time using
 # a for loop.
-#
-# for letter in "alpha":
-#   print(letter)
-#
+
 # Create a dictionary with `dd = {}`. Assign values with `dd["foo"] = 1`.
 # Check to see if a dictionary has a key using the `in` operator.
-#
 #
 # Careful. Python requires that you insert a key into a dictionary
 # before you try to modify it's value. If you try to access a dictionary
@@ -26,3 +26,15 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 2}
+
+def letter_count(string):
+    dd = {}
+    for letter in string:
+        if letter in dd:
+            dd[letter] =+ 1
+    else:
+        dd[letter] = 1
+        return dd
+        
+banana_count = letter_count('banana')
+print(banana_count)

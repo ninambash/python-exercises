@@ -1,6 +1,7 @@
 # Write a function called `print_contacts` that takes a
 # dictionary of key-value pairs for names and phone numbers,
 # then outputs the `name` with the contact info.
+
 #
 # Try iterating over a dictionary with a for loop and printing
 # out what values come back.
@@ -20,3 +21,12 @@ contacts = {
   'Lenny': '444-444-4444',
   'Daniel': '777-777-7777'
 }
+# def print_contacts(list):
+#     for person in list:
+#         print(f'{person} has a phone number of {list[person]}')
+
+# print_contacts(contacts)        
+def print_contacts(contacts):
+    for contact in contacts:
+        print(f'{contact} has a phone number of {contacts[contact]}')
+print_contacts(contacts)        

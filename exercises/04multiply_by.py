@@ -1,5 +1,6 @@
 # Write a function called `multiply_by` that takes a list and
 # a number, and returns the list of numbers multiplied by that number.
+
 #
 # You'll want to apply your fundamental programming knowledge here.
 # What are the pieces to this problem? You'll need to define a function,
@@ -10,3 +11,14 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+def multiply_by (li, coefficient):
+    products = []
+    for num in li:
+      products.append(num * coefficient)
+    return products
+
+print(multiply_by(['1', '2', '3'], 5)) 
+#loop over the item in the list, multiply it by the coefficient
+
+
+
